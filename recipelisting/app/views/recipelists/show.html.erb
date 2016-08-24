@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @recipelist.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @recipelist.price %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @recipelist.ingredients %>
+</p>
+
+<%= link_to 'Edit', edit_recipelist_path(@recipelist) %> |
+<%= link_to 'Back', recipelists_path %>
